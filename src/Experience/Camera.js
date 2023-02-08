@@ -26,17 +26,17 @@ export default class Camera
             0.01,
             80
         )
-        this.instance.position.set(-1.5, 3.5, -16)
+        this.instance.position.set(-0.5, 1.5, 2)
         // this.instance.position.set(9.42, 10.7, 11.81)
         this.scene.add(this.instance)
 
         const gridSize = 20
         const divisions = 20
         const gridHelper = new THREE.GridHelper(gridSize, divisions)
-        this.scene.add(gridHelper)
+        // this.scene.add(gridHelper)
 
         this.axisHelper = new THREE.AxesHelper(8)
-        this.scene.add(this.axisHelper)
+        // this.scene.add(this.axisHelper)
 
         // // Debug
 
@@ -58,7 +58,7 @@ export default class Camera
         this.scene.add(this.cameraTest)
 
         this.cameraHelper = new THREE.CameraHelper(this.cameraTest)
-        this.scene.add(this.cameraHelper)
+        // this.scene.add(this.cameraHelper)
 
         // const timeline = gsap.timeline()
         // let animationFinished = false
@@ -94,14 +94,15 @@ export default class Camera
             this.controls = new OrbitControls(this.instance, this.canvas)
             this.controls.enableDamping = true
             this.controls.dampingFactor = 0.03
-            this.controls.minAzimuthAngle = Math.PI * 0.005
-            this.controls.maxAzimuthAngle = Math.PI * 0.5
-            this.controls.minPolarAngle = Math.PI * 0.09
-            this.controls.maxPolarAngle = Math.PI * 0.45
+            this.controls.enableZoom = false
+            // this.controls.minAzimuthAngle = Math.PI * 0.005
+            // this.controls.maxAzimuthAngle = Math.PI * 0.5
+            // this.controls.minPolarAngle = Math.PI * 0.09
+            // this.controls.maxPolarAngle = Math.PI * 0.45
             this.controls.minDistance = 6
             // this.controls.maxDistance = 43
-            this.controls.maxDistance = 15
-            this.controls.enablePan = true
+            this.controls.maxDistance = 12
+            this.controls.enablePan = false
             // this.controls.enablePan = false
     }
 

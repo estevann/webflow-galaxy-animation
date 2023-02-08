@@ -12,11 +12,11 @@ void main()
     vec3 originalPosition = vec3(position);
 
     float angle = atan(position.x, position.z);
-    float distanceToCenter = length(position.xz);
+    float distanceToCenter = length(position.xz) + 0.5;
     float angleOffset = (1.0 / distanceToCenter) * uTime;
     angle += angleOffset;
-    originalPosition.x = cos(angle) * distanceToCenter ;
-    originalPosition.z = sin(angle) * distanceToCenter;
+    originalPosition.x = sin(angle) * distanceToCenter;
+    originalPosition.z = cos(angle) * distanceToCenter;
 
     vec4 modelPosition = modelMatrix * vec4(originalPosition, 1.0);
 

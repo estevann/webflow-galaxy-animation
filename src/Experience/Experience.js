@@ -5,7 +5,7 @@ import Resources from './Utils/Resources.js'
 import Camera from './Camera.js'
 import sources from './sources.js'
 import Renderer from './Renderer.js'
-import Room from './World/Room.js'
+import Webflow from './World/webflow.js'
 import Debug from './Debug'
 
 
@@ -31,12 +31,12 @@ export default class Experience
         // Setup
         this.sizes = new Sizes()
         this.time = new Time()
-        this.debug = new Debug()
+        // this.debug = new Debug()
         this.scene = new THREE.Scene()
         this.resources = new Resources(sources)
         this.camera = new Camera()
         this.renderer = new Renderer()
-        this.room = new Room()
+        this.webflow = new Webflow()
 
         //Sizes resize event
         this.sizes.on('resize', () => 
@@ -62,7 +62,7 @@ export default class Experience
     {
         this.camera.update()
         this.renderer.update()
-        this.room.update()
+        this.webflow.update()
     }
 
 }

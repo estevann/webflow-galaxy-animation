@@ -1,7 +1,7 @@
 {
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/estevann/portfolio-2023.git"
+    "url": "git+ssh://git@github.com/estevann/webflow-galaxy-animation.git"
   },
   "license": "UNLICENSED",
   "scripts": {
@@ -37,13 +37,13 @@
   "devDependencies": {
     "gsap": "^3.11.4"
   },
-  "name": "portfolio-estevana-2023",
-  "description": "Portfolio of Estevan Brout",
+  "name": "webflow-galaxy-animation.git",
+  "description": "galaxy of Estevan Brout",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Estevan-brout",
   "bugs": {
-    "url": "https://github.com/estevann/portfolio-2023/issues"
+    "url": "https://github.com/estevann/webflow-galaxy-animation.git"
   },
-  "homepage": "https://github.com/estevann/portfolio-2023#readme"
+  "homepage": "https://github.com/estevann/webflow-galaxy-animation.git"
 }
